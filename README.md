@@ -1,4 +1,16 @@
+# Weather App
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Installation
+
+- Run
+
+  ```sh
+  yarn install
+  ```
+
+- Copy file `.env.example` to `.env` and put your API key
 
 ## Available Scripts
 
