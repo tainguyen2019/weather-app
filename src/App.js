@@ -1,19 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
-import cities from "./data/city.json";
+import CityList from './component/CityList';
+import Weather from './component/Weather';
+import { Switch, Route } from 'react-router-dom';
 
-function App() {
-  console.log(cities);
-  return (
-    <div>
-      <ul>
-        {cities.map(city => (
-          <li key={city.id}>{city.name}</li>
-        ))}
-      </ul>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Switch>
+          <Route path="/weather/:id" exact component={Weather} />
+          <Route path="/" exact>
+            <CityList />
+          </Route>
+        </Switch>
+      </div>
+    );
+  }
 }
 
 export default App;
