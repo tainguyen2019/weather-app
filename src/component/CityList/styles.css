@@ -1,0 +1,22 @@
+.city-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 16px;
+    margin: 16px 24px;
+}
+
+.city {
+    border-radius: 4px;
+    padding: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.city a {
+    text-decoration: none;
+}
+
+.city:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}

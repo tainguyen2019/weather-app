@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Run
 
   ```sh
-  yarn install
+  yarn
   ```
 
 - Copy file `.env.example` to `.env` and put your API key

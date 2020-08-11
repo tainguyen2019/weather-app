@@ -1,0 +1,42 @@
+.container{
+    padding: 24px;
+}
+
+.city-name {
+    margin-bottom: 24px;
+}
+
+.title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.date {
+    color: #8a8a8a;
+}
+
+
+.temp-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.temp {
+    font-size: 26px;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+.weather-forecast-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 16px;
+    margin: 16px 24px;
+}
+
+h3{
+    margin-left: 24px;
+}
